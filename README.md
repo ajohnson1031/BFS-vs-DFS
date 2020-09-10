@@ -2,7 +2,11 @@
 
 ## INTRODUCTION
 
-The purpose of this short program is to provide the end user with a definitive answer as to which algorithmic search (breadth first, or depth first) is quickest under a given set of circumstances. [Made for Python3]
+The purpose of this short program is to provide the end user with a definitive answer as to which algorithmic search (breadth first, or depth first) is quickest under a given set of circumstances. It first generates a random adjacency matrix using the Erdós-Rényi model. Then `buildgraph()`, a secondary method of the class, converts those edges into an adjacency list for proper traversal of the nodes.
+
+Setting the `verbose` flag to `t` (true) provides the additional benefit of printing out a nice randomized graph in the case you have a need for a quickly and easily generated graph for other applications. It should be noted that depending upon the probability indicated, the generated graph may fall into one or multiple categories, from directed to acyclic to directed acyclic, but is never cyclic or undirected.
+
+<strong>[Coded for use with Python3]</strong>
 
 ### DEPENDENCIES
 
