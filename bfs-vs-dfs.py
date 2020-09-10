@@ -56,7 +56,7 @@ class BFSvsDFS:
             
             if current_vertex == self.targ:
                 if self.verbose == "T":
-                    return f"{self.fingraph}\n{TYELLOW}{current_path}{ENDC}, {TGREEN}edge found in {len(current_path)}{ENDC} => BFS"
+                    return f"{self.fingraph}\n\n{TYELLOW}{current_path}{ENDC}, {TGREEN}edge found in {len(current_path)}{ENDC} => BFS"
                 else:
                     return f"{TYELLOW}{current_path}{ENDC},{TGREEN} edge found in {len(current_path)}{ENDC} => BFS"       
                 
@@ -73,7 +73,7 @@ class BFSvsDFS:
                         self.enqueue(n_path)
                         
         if self.verbose == "T":
-            return f'{TYELLOW}{self.fingraph}{ENDC}\n{TRED}edge not found => BFS, DFS{ENDC}'
+            return f'{TYELLOW}{self.fingraph}{ENDC}\n\n{TRED}edge not found => BFS, DFS{ENDC}'
         
         return f'{TRED}edge not found => BFS, DFS{ENDC}'
    
